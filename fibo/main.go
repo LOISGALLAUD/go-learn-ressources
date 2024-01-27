@@ -4,14 +4,14 @@ import (
 	"fmt"
 )
 
-func recursiveFibonacci(n int) (result int) {
-	if n <= 1 {
-		return n
-	}
-	result = recursiveFibonacci(n-1) + recursiveFibonacci(n-2)
-	fmt.Println(result)
-	return
-}
+// func recursiveFibonacci(n int) (result int) {
+// 	if n <= 1 {
+// 		return n
+// 	}
+// 	result = recursiveFibonacci(n-1) + recursiveFibonacci(n-2)
+// 	fmt.Println(result)
+// 	return
+// }
 
 func main() {
 	var (
@@ -31,7 +31,4 @@ func main() {
 		previous = current
 		current = next
 	}
-
-	fmt.Println("Recursive Fibonacci")
-	recursiveFibonacci(count)
 }
